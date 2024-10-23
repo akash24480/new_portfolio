@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
      <BrowserRouter>
-     <div>
+     <div className="px-4 md:px-10">
      <Navbar />
      </div>
         </BrowserRouter>

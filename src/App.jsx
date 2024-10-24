@@ -1,3 +1,4 @@
+import Profile from "./components/Hero/Profile";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ const App = () => {
      <BrowserRouter>
      <div className="px-4 md:px-10">
      <Navbar />
+     <Profile />
      </div>
         </BrowserRouter>
     </>

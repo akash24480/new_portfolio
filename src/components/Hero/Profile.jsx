@@ -7,6 +7,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import ProjectCard from './ProjectCard';
 
 
 
@@ -45,7 +46,7 @@ const Profile = () => {
         </div>
 
         <div className='flex flex-col gap-12 lg:gap-10 lg:w-1/3'>
-        
+        <ProjectCard />
         </div>
 
       </div>

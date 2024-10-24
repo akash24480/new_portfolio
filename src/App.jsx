@@ -1,18 +1,20 @@
-import Profile from "./components/Hero/Profile";
-import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter } from 'react-router-dom';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
 
 
 
 const App = () => {
   return (
     <>
-     <BrowserRouter>
-     <div className="px-4 md:px-10">
-     <Navbar />
-     <Profile />
-     </div>
-        </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<Home />} />
+      <Route path='/works' element={<Home />} />
+      <Route path='/contact' element={<Home />} />
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
